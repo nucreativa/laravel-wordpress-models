@@ -1,0 +1,22 @@
+{
+  "name": "nucreativa/laravel-wordpress-models",
+  "description": "Eloquent Models of Wordpress",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ary Wibowo",
+      "email": "nucreativa@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.6.4",
+    "illuminate/database": "5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "LaravelWordpressModels\\": "src/"
+    }
+  }
+}
