@@ -2,7 +2,10 @@
 
 namespace LaravelWordpressModels\Models;
 
-class TermTaxonomy extends \Illuminate\Database\Eloquent\Model {
+
+use Illuminate\Database\Eloquent\Model;
+
+class TermTaxonomy extends Model {
 	protected $table = 'term_taxonomy';
 
 	public function term() {

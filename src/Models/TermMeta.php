@@ -2,7 +2,10 @@
 
 namespace LaravelWordpressModels\Models;
 
-class Meta extends \Illuminate\Database\Eloquent\Model {
+
+use Illuminate\Database\Eloquent\Model;
+
+class Meta extends Model {
 	protected $table = 'term_meta';
 	protected $fillable = [ 'meta_key', 'meta_value' ];
 	protected $primaryKey = 'meta_id';

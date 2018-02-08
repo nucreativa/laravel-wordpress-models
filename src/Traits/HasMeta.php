@@ -2,6 +2,7 @@
 
 namespace LaravelWordpressModels\Traits;
 
+
 use LaravelWordpressModels\WordpressHelper;
 
 trait HasMeta {

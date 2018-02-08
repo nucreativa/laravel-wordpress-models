@@ -2,10 +2,12 @@
 
 namespace LaravelWordpressModels\Models;
 
+
+use Illuminate\Database\Eloquent\Model;
 use LaravelWordpressModels\Traits\HasMeta;
 use LaravelWordpressModels\Traits\HasRoles;
 
-class User extends \Illuminate\Database\Eloquent\Model {
+class User extends Model {
 
 	use HasMeta, HasRoles;
 

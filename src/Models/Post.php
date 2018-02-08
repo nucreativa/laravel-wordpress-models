@@ -3,9 +3,10 @@
 namespace LaravelWordpressModels\Models;
 
 
+use Illuminate\Database\Eloquent\Model;
 use LaravelWordpressModels\Traits\HasMeta;
 
-class Post extends \Illuminate\Database\Eloquent\Models {
+class Post extends Model {
 
 	use HasMeta;
 

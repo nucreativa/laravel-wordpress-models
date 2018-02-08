@@ -2,9 +2,11 @@
 
 namespace LaravelWordpressModels\Models;
 
+
+use Illuminate\Database\Eloquent\Model;
 use LaravelWordpressModels\Traits\HasMeta;
 
-class Term extends \Illuminate\Database\Eloquent\Model {
+class Term extends Model {
 
 	use HasMeta;
 

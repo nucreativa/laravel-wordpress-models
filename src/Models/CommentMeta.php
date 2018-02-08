@@ -2,7 +2,10 @@
 
 namespace LaravelWordpressModels\Models;
 
-class CommentMeta extends \Illuminate\Database\Eloquent\Model {
+
+use Illuminate\Database\Eloquent\Model;
+
+class CommentMeta extends Model {
 	protected $table = 'commentmeta';
 	public $timestamps = false;
 	protected $fillable = [ 'meta_key', 'meta_value' ];

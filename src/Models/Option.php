@@ -2,9 +2,10 @@
 
 namespace LaravelWordpressModels\Models;
 
+use Illuminate\Database\Eloquent\Model;
 use LaravelWordpressModels\WordpressHelper;
 
-class Option extends \Illuminate\Database\Eloquent\Model {
+class Option extends Model {
 	protected $table = 'options';
 	protected $primaryKey = 'option_id';
 	public $timestamps = false;

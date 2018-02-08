@@ -2,7 +2,10 @@
 
 namespace LaravelWordpressModels\Models;
 
-class UserMeta extends \Illuminate\Database\Eloquent\Model {
+
+use Illuminate\Database\Eloquent\Model;
+
+class UserMeta extends Model {
 	protected $table = 'usermeta';
 	public $timestamps = false;
 	protected $fillable = [ 'meta_key', 'meta_value' ];

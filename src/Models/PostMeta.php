@@ -2,7 +2,10 @@
 
 namespace LaravelWordpressModels\Models;
 
-class PostMeta extends \Illuminate\Database\Eloquent\Model {
+
+use Illuminate\Database\Eloquent\Model;
+
+class PostMeta extends Model {
 	protected $table = 'postmeta';
 	public $timestamps = false;
 	protected $fillable = [ 'meta_key', 'meta_value' ];

@@ -2,7 +2,10 @@
 
 namespace LaravelWordpressModels\Models;
 
-class Link extends \Illuminate\Database\Eloquent\Model {
+
+use Illuminate\Database\Eloquent\Model;
+
+class Link extends Model {
 	protected $table = 'links';
 	protected $primaryKey = 'link_id';
 	public $timestamps = false;
