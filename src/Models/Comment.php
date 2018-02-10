@@ -18,7 +18,7 @@ class Comment extends Model {
 	const CREATED_AT = 'comment_date';
 
 	public function post() {
-		return $this->belongsTo( Post::class );
+		return $this->belongsTo( Post::class, 'comment_post_ID' );
 	}
 
 	public function meta() {
@@ -26,7 +26,7 @@ class Comment extends Model {
 		            ->select( [ 'comment_id', 'meta_key', 'meta_value' ] );
 	}
 
-	public function user() {
+	public function commentator() {
 		return $this->hasOne( User::class, 'ID', 'user_id' );
 	}
 
