@@ -30,4 +30,8 @@ class Comment extends Model {
 		return $this->hasOne( User::class, 'ID', 'user_id' );
 	}
 
+    public function child() {
+        return $this->hasMany( Comment::class, 'comment_parent');
+    }
+
 }
