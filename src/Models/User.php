@@ -1,11 +1,11 @@
 <?php
 
-namespace LaravelWordpressModels\Models;
+namespace Nucreativa\LaravelWordpressModels\Models;
 
 
 use Illuminate\Database\Eloquent\Model;
-use LaravelWordpressModels\Traits\HasMeta;
-use LaravelWordpressModels\Traits\HasRoles;
+use Nucreativa\LaravelWordpressModels\Traits\HasMeta;
+use Nucreativa\LaravelWordpressModels\Traits\HasRoles;
 
 class User extends Model {
 
@@ -30,6 +30,18 @@ class User extends Model {
 	public function meta() {
 		return $this->hasMany( UserMeta::class, 'user_id' )
 		            ->select( [ 'user_id', 'meta_key', 'meta_value' ] );
+	}
+
+	public function totalPost() {
+		return $this->posts()->count();
+	}
+
+	public function scopeHasPost( $query ) {
+		return $query->whereHas( 'posts', function ( $query ) {
+			$query
+				->selectRaw( 'COUNT(ID) as total_post' )
+				->having( 'total_post', '>', 0 );
+		} );
 	}
 
 }

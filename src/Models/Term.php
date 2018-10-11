@@ -1,10 +1,10 @@
 <?php
 
-namespace LaravelWordpressModels\Models;
+namespace Nucreativa\LaravelWordpressModels\Models;
 
 
 use Illuminate\Database\Eloquent\Model;
-use LaravelWordpressModels\Traits\HasMeta;
+use Nucreativa\LaravelWordpressModels\Traits\HasMeta;
 
 class Term extends Model {
 

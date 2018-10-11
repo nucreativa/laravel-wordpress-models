@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelWordpressModels\Models;
+namespace Nucreativa\LaravelWordpressModels\Models;
 
 
 use Illuminate\Database\Eloquent\Model;

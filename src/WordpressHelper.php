@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelWordpressModels;
+namespace Nucreativa\LaravelWordpressModels;
 
 
 class WordpressHelper {

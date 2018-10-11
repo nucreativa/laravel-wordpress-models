@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelWordpressModels\Traits;
+namespace Nucreativa\LaravelWordpressModels\Traits;
 
 
 trait HasRoles {

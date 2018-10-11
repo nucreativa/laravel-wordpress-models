@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelWordpressModels\Traits;
+namespace Nucreativa\LaravelWordpressModels\Traits;
 
 
-use LaravelWordpressModels\WordpressHelper;
+use Nucreativa\LaravelWordpressModels\WordpressHelper;
 
 trait HasMeta {
 

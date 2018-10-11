@@ -1,9 +1,9 @@
 <?php
 
-namespace LaravelWordpressModels\Models;
+namespace Nucreativa\LaravelWordpressModels\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use LaravelWordpressModels\WordpressHelper;
+use Nucreativa\LaravelWordpressModels\WordpressHelper;
 
 class Option extends Model {
 	protected $table = 'options';
