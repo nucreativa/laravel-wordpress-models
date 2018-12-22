@@ -3,28 +3,33 @@
 namespace Nucreativa\LaravelWordpressModels\Traits;
 
 
-trait HasRoles {
-	public function hasRole( $role = '' ) {
-		return in_array( $role, $this->capabilities );
-	}
+trait HasRoles
+{
+    public function hasRole($role = '')
+    {
+        return in_array($role, $this->capabilities);
+    }
 
-	public function hasAnyRoles( $roles = [] ) {
-		if ( ! empty( $roles ) ) {
-			foreach ( $roles as $role ) {
-				if ( $this->hasRole( $role ) ) {
-					return true;
-				}
-			}
-		}
+    public function hasAnyRoles($roles = [])
+    {
+        if ( ! empty($roles)) {
+            foreach ($roles as $role) {
+                if ($this->hasRole($role)) {
+                    return true;
+                }
+            }
+        }
 
-		return false;
-	}
+        return false;
+    }
 
-	public function getCapabilitiesAttribute() {
-		return array_keys( $this->getMeta( 'wp_capabilities' ) );
-	}
+    public function getCapabilitiesAttribute()
+    {
+        return array_keys($this->getMeta('wp_capabilities'));
+    }
 
-	public function getIsAdminAttribute() {
-		return $this->hasRole( 'administrator' );
-	}
+    public function getIsAdminAttribute()
+    {
+        return $this->hasRole('administrator');
+    }
 }
